@@ -7,6 +7,12 @@ This program solves two different problems given using incorporated codes and fu
 ## Instructions
 Write a Python script/code in the Jupyter Notebook to do the given problems.
 
+### Importing NumPy Library
+```
+import numpy as np
+```
+Before writing the code, the NumPy Library was imported. This grants access to the ndarray object and its associated operations and functions.
+
 ### Problem #1: Normalization Problem
 In this problem, create a random 5 x 5 ndarray and store it to variable X. Normalize X. Save your normalized ndarray as X_normalized.npy
 
@@ -23,6 +29,10 @@ z = (x - mean)/std # Normalization formula
 np.save('X_normalized.npy', z) 
 np.load('X_normalized.npy')
 ```
+<br>
+Firstly, the array was initialized using the variable "x", which was assigned the 5 x 5 array with randomized values. Next, the "mean" variable stored the mean of the array (using the ".mean" call) and the "std" variable stored the standard deviation of the array (using the ".std" call). The "z" variable is used to store the normalization formula: Z = (X - x̄) / σ. The array was then saved as "X_normalized.npy" and then loaded to show the result.
+<br><br>
+
 **Results**
 ```
 array([[-1.3274631 ,  1.44955219, -0.65093186, -1.24015547, -1.07381586],
