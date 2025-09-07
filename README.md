@@ -30,7 +30,18 @@ np.save('X_normalized.npy', z)
 np.load('X_normalized.npy')
 ```
 <br>
-Firstly, the array was initialized using the variable "x", which was assigned the 5 x 5 array with randomized values. Next, the "mean" variable stored the mean of the array (using the ".mean" call) and the "std" variable stored the standard deviation of the array (using the ".std" call). The "z" variable is used to store the normalization formula: Z = (X - x̄) / σ. The array was then saved as "X_normalized.npy" and then loaded to show the result.
+Firstly, the array was initialized using the variable "x", which was assigned the 5 x 5 array with randomized values. Next, the "mean" variable stored the mean of the array (using the ".mean" call) and the "std" variable stored the standard deviation of the array (using the ".std" call). The "z" variable is used to store the normalization formula: <br><br>
+
+```
+Z = (X - x̄) / σ. 
+```
+wherein:
+* Z is the "z" variable, representing the normalized value.
+* X is the "x" variable, representing the random number from the array.
+* x̄ is the "mean" variable.
+* σ is the "std" variable.
+<br>
+The array was then saved as "X_normalized.npy" and then loaded to show the result.
 <br><br>
 
 **Results**
@@ -42,7 +53,7 @@ array([[-1.3274631 ,  1.44955219, -0.65093186, -1.24015547, -1.07381586],
        [ 0.12410343, -1.00661304, -0.92700785, -0.97911862,  1.57621657]])
 ```
 <br>
-The copy of this result is found here: https://github.com/JaqlynBernardo/PA2-Numerical-Python-NumPy-/raw/main/X_normalized.npy
+The copy of this result is found here: [X_normalized.npy](https://github.com/JaqlynBernardo/PA2-Numerical-Python-NumPy-/blob/main/X_normalized.npy)
 
 ### Problem #2: Divisible by 3 Problem
 Create a 10 x 10 ndarray which are the squares of the first 100 positive integers. From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy
