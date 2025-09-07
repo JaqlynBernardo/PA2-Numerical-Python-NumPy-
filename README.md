@@ -53,7 +53,7 @@ array([[-1.3274631 ,  1.44955219, -0.65093186, -1.24015547, -1.07381586],
        [ 0.12410343, -1.00661304, -0.92700785, -0.97911862,  1.57621657]])
 ```
 <br>
-The copy of this result is found here: [X_normalized.npy](https://github.com/JaqlynBernardo/PA2-Numerical-Python-NumPy-/blob/main/X_normalized.npy)
+The copy of this result is found here: https://github.com/JaqlynBernardo/PA2-Numerical-Python-NumPy-/blob/main/X_normalized.npy
 
 ### Problem #2: Divisible by 3 Problem
 Create a 10 x 10 ndarray which are the squares of the first 100 positive integers. From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy
@@ -75,12 +75,21 @@ for x in A.flatten():
 np.save('div_by_3.npy', div_by_3) 
 np.load('div_by_3.npy')
 ```
+
+First, in the "num_list" varaible, using the range() function to generate the first 100 natural numbers inside a list data structure. Then, variable, "num_array", takes the square of each element inside the list, and stores it into its own array. The numbers inside the "num_array" is then taken and reshaped into a 10 x 10 array, inside of varaible "A".
+<br><br>
+To get all the numbers divisible by 3, first, an empty list, "div_by_3", was created to be the placeholder. Next, the for loop takes each element in the flattened array "A" (so that each element can be accounted for instead of each row). Inside the loop is an if statement that checks if each element has a remainder equal to zero when divided by three. If the if statement is satisfied, the number will be appeneded into the empty list. Lastly, the array "div_by_3" array is saved as "div_by_3.npy" and then loaded to show the result.
+
+
 **Results**
 ```
 array([   9,   36,   81,  144,  225,  324,  441,  576,  729,  900, 1089,
        1296, 1521, 1764, 2025, 2304, 2601, 2916, 3249, 3600, 3969, 4356,
        4761, 5184, 5625, 6084, 6561, 7056, 7569, 8100, 8649, 9216, 9801])
 ```
+<br>
+The copy of this result is found here: https://github.com/JaqlynBernardo/PA2-Numerical-Python-NumPy-/blob/main/div_by_3.npy
+
 
 ## Author
 Bernardo, Jaqlyn Trazy B.
